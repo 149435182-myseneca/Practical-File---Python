@@ -1,0 +1,14 @@
+x = int(input("Nhập x : "))
+n = int(input("Nhập n : "))
+su = 0
+giai_thua = 1
+mau = 1
+for i in range(1,n+1):
+    mau = 2 * i + 1
+    # Không hiểu tại sao luôn
+    giai_thua = giai_thua*mau*(mau-1)
+    # Hàm pow lấy luỹ thừa
+    tu = pow(x, 2*i+1)
+    su += tu/giai_thua
+sum_tong = x + su
+print(sum_tong)
