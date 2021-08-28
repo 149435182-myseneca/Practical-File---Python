@@ -4,6 +4,7 @@ def batDau():
     i = 0
     # Muốn thay bao nhiêu lượt đoán thì thế vào biến luot_doan
     luot_doan = 5
+    # Biến luot dung để tính điểm và tính số lượt chơi còn lại trong game
     luot = 0
     while i < luot_doan:
         luot = luot_doan - i
