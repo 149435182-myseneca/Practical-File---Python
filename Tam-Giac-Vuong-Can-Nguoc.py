@@ -1,7 +1,7 @@
 print("Dinh Quy Pham")
-a = "Một bài toán hay về tam giác vuông cân góc phải dưới"
-print(a.center(25))
+print("Một bài toán hay về tam giác vuông cân góc phải dưới")
 print("-"*35)
+
 nhap_cao = None
 while True :
     try:
