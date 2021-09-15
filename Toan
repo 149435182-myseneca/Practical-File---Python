@@ -1,14 +1,20 @@
-x = int(input("Nhập x : "))
-n = int(input("Nhập n : "))
+n = int(input("Nhập N : "))
+x = int(input("Nhập X : "))
+lst = list()
 su = 0
-giai_thua = 1
-mau = 1
-for i in range(1,n+1):
-    mau = 2 * i + 1
-    # Không hiểu tại sao luôn
-    giai_thua = giai_thua*mau*(mau-1)
-    # Hàm pow lấy luỹ thừa
-    tu = pow(x, 2*i+1)
-    su += tu/giai_thua
-sum_tong = x + su
-print(sum_tong)
+tada = 1
+
+def giao_thua(k):
+    if k == 0 or k == 1:
+        return 1
+    else:
+        return k * giao_thua(k-1)
+
+for i in range(n+1):
+    lst.append(i)
+
+for a in lst:
+    su += a
+    tada += (pow(x,2*a+1))/giao_thua(2*a+1)
+
+print(tada)
